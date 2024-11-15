@@ -62,9 +62,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 50),
                 const Icon(
                   Icons.lock,
-                  size: 100,
+                  size: 150,
                 ),
-                const SizedBox(height: 50),
+                const SizedBox(height: 5),
                 Text(
                   'Welcome back you\'ve been missed!',
                   style: TextStyle(
@@ -72,32 +72,19 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontSize: 16,
                   ),
                 ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 40),
                 LoginTextField(
                   controller: emailController,
                   hintText: 'Email',
                   obscureText: false,
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 20),
                 LoginTextField(
                   controller: passwordController,
                   hintText: 'Password',
                   obscureText: true,
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        'Forgot Password?',
-                        style: TextStyle(color: Colors.grey[600]),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 30),
                 GestureDetector(
                   onTap: () {
                     signUserIn();
